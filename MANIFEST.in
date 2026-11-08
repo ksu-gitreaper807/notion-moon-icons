@@ -1,0 +1,3 @@
+include .env.example
+recursive-include systemd *.service *.timer
+recursive-include examples *.yml

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notion-moon-icons"
+version = "0.1.0"
+description = "Generate moon phase icons for dated Notion journal pages, with Linux scheduling and desktop notifications."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "ksu-gitreaper807"}]
+dependencies = ["requests>=2.32", "Pillow>=10"]
+
+[project.urls]
+Homepage = "https://github.com/ksu-gitreaper807/notion-moon-icons"
+Issues = "https://github.com/ksu-gitreaper807/notion-moon-icons/issues"
+
+[project.scripts]
+notion-moon-icons = "notion_moon_icons.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
